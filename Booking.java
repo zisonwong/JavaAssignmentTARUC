@@ -1,9 +1,15 @@
-package ObjectClass;
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package assignment1;
 import DataHandler.DataHandler;
 
 import java.util.Random;
-
+/**
+ *
+ * @author zison
+ */
 public class Booking {
     private Customer Customer;
     private String bookingID;
@@ -105,5 +111,4 @@ public class Booking {
         }
         return false;
     }
-
 }

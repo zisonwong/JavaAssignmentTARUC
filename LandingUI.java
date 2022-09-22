@@ -1,14 +1,18 @@
-package UIHandler;
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package assignment1;
 import DataHandler.DataHandler;
 import ObjectClass.Booking;
 import ObjectClass.Customer;
-import ObjectClass.Ticket;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
-
+/**
+ *
+ * @author zison
+ */
 public class LandingUI {
     public static Customer customer = null;
     public static void initLandingUI() {

@@ -1,9 +1,13 @@
-package ObjectClass;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package assignment1;
 
-import DataHandler.DataHandler;
-
-import java.util.Random;
-
+/**
+ *
+ * @author zison
+ */
 public class Customer {
     private String CustomerID;
     private String userName;
@@ -82,3 +86,4 @@ public class Customer {
     }
 
 }
+

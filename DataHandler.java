@@ -1,5 +1,8 @@
-package DataHandler;
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package assignment1;
 import ObjectClass.Booking;
 import ObjectClass.Customer;
 import ObjectClass.Ticket;
@@ -7,7 +10,10 @@ import ObjectClass.Ticket;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
-
+/**
+ *
+ * @author zison
+ */
 public class DataHandler {
     public static File CUSTOMER_FILE = new File("CustomerList.txt");
     public static File BOOKING_FILE = new File("BookingList.txt");
