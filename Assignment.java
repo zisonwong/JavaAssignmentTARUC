@@ -75,8 +75,7 @@ public void actionPerformed(ActionEvent e) {
             success.setText("Login successful");
             success.setForeground(Color.green);
             Mainmenu();
-        } 
-        else {
+        } else {
             success.setText("Login unsuccessful");
             success.setForeground(Color.red);
         }
@@ -90,11 +89,15 @@ public void actionPerformed(ActionEvent e) {
         else if (passwordText.getText().isEmpty()){
                 success.setText("password is empty");
         }
-    }
+
+         
+}
         public void Mainmenu(){
             Product[] products={
                 new Product("Shirt",6.00),
-                new Product("Pants",5.00)
+                new Product("Pants",5.00),
+                new Product("skirt",8.00),
+                new Product("dress",9.00)
             };
             JFrame mmFrame = new JFrame();
             JPanel mmPanel = new JPanel();
@@ -105,44 +108,63 @@ public void actionPerformed(ActionEvent e) {
             mmPanel.setLayout(null);
             mmFrame.setResizable(false);
             mmPanel.setBackground(Color.black);
-            
-            for(int i =0;i<products.length;i++){
-                System.out.println(products[i]);
+
+            System.out.println("Product list");
+            for (Product product : products) {
+                System.out.println(product);
             }
             
-            System.out.println("Product list");
             JButton products1 = new JButton("Shirt  RM6.00");
             mmPanel.add(products1);
             products1.setBounds(0,0,150,100);
+
             
-            JButton products2 = new JButton("Pants  RM7.00");
+            JButton products2 = new JButton("Pants  RM5.00");
             mmPanel.add(products2);
             products2.setBounds(0,100,150,100);
+
             
             JButton products3 = new JButton("Skirt  RM8.00");
             mmPanel.add(products3);
             products3.setBounds(0,200,150,100);
+
             
             JButton products4 = new JButton("dress  RM9.00");
             mmPanel.add(products4);
             products4.setBounds(0,300,150,100);
+
             
             JButton products5 = new JButton("man");
             mmPanel.add(products5);
             products5.setBounds(150,0,150,100);
+
             
             JButton products6 = new JButton("woman");
             mmPanel.add(products6);
             products6.setBounds(150,100,150,100);
+
             
             JButton products7 = new JButton("Skirt");
             mmPanel.add(products7);
             products7.setBounds(150,200,150,100);
+
             
             JButton products8 = new JButton("Skirt");
             mmPanel.add(products8);
             products8.setBounds(150,300,150,100);
+
             
+            JTable mmTable;
+
+            mmTable = new JTable();
+            mmPanel.add(mmTable);
+            mmTable.setBounds(300,0,400,400);
+
+//            int p=Integer.parseInt(input);
+//            switch(p){
+//                case products1:
+//                    
+//            }
             
             mmFrame.setVisible(true);
 //after click pay btn
@@ -151,6 +173,9 @@ public void actionPerformed(ActionEvent e) {
 //jframe(payment)
 //print orderlist,subtotal,tax =6%,grandtotal,payment method(cash or card),change,sout(purchase completed),member discount 5%
         }
+
+
+//==============product================
 class Product {
         private String productName;
         private double productPrice;
@@ -182,11 +207,19 @@ class Product {
 
         @Override
         public String toString() {
-            return "Product{" + "productName=" + productName + ", productPrice=" + productPrice + '}';
+            return "productName=" + productName + "\nproductPrice=" + productPrice ;
         }
         
     }
-}
+
+
+
+
+
+}//end of whole code
+
+
+
 
 
 
